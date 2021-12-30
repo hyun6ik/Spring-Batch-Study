@@ -24,3 +24,10 @@ spring:
   batch:
     jdbc:
       initialize-schema: always
+---
+spring:
+  config:
+    activate:
+      on-profile: test
+  jpa:
+    database: h2
