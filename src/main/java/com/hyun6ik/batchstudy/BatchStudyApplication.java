@@ -3,6 +3,7 @@ package com.hyun6ik.batchstudy;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+
 @SpringBootApplication
 public class BatchStudyApplication {
 

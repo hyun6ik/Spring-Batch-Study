@@ -1,0 +1,9 @@
+package com.hyun6ik.batchstudy.common.config.batch;
+
+import org.springframework.batch.core.configuration.annotation.EnableBatchProcessing;
+import org.springframework.context.annotation.Configuration;
+
+@EnableBatchProcessing
+@Configuration
+public class BatchConfig {
+}
