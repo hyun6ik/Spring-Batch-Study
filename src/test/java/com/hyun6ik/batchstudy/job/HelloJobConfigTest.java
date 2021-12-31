@@ -29,7 +29,6 @@ public class HelloJobConfigTest {
     @Test
     public void success() throws Exception {
         final JobExecution execution = jobLauncherTestUtils.launchJob();
-
         assertThat(execution.getExitStatus()).isEqualTo(ExitStatus.COMPLETED);
     }
 }
