@@ -11,9 +11,8 @@ spring:
     activate:
       on-profile: local
   datasource:
-    hikari:
       driver-class-name: com.mysql.cj.jdbc.Driver
-      jdbc-url: jdbc:mysql://localhost:23306/batch?serverTimezone=UTC&characterEncoding=UTF-8
+      url: jdbc:mysql://localhost:23306/batch?serverTimezone=UTC&characterEncoding=UTF-8
       username: order-svc
       password: order-pass
   jpa:
