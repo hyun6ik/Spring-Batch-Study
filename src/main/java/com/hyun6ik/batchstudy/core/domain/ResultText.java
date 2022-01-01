@@ -12,7 +12,7 @@ import javax.persistence.*;
 @Getter
 @DynamicUpdate
 @Table(name = "result_text")
-@NoArgsConstructor(access = AccessLevel.PROTECTED)
+@NoArgsConstructor
 public class ResultText {
 
     @Id

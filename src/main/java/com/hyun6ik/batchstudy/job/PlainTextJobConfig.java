@@ -45,9 +45,9 @@ public class PlainTextJobConfig {
 
     @JobScope
     @Bean("plainTextStep")
-    public Step plainTextStep(ItemReader plainTextReader,
-                              ItemProcessor plainTextProcessor,
-                              ItemWriter plainTextWriter) {
+    public Step plainTextStep(ItemReader<PlainText> plainTextReader,
+                              ItemProcessor<PlainText, String> plainTextProcessor,
+                              ItemWriter<String> plainTextWriter) {
         return stepBuilderFactory.get("plainTextStep")
                 .<PlainText, String>chunk(5)
                 .reader(plainTextReader)
